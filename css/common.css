@@ -1,0 +1,8 @@
+html{
+    overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: beige;
+    color: navy;
+}

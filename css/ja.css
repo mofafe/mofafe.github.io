@@ -1,0 +1,41 @@
+html {
+    overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    word-break: keep-all;
+}
+
+.main-header {
+    position: fixed;
+}
+
+a,
+a:link,
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+header {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    margin-top: 50vh;
+    margin-left: 66.66vw;
+    position: absolute;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    main {
+        font-size: 0.5em;
+        margin-left: 60vw;
+    }
+}

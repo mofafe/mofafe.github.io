@@ -1,0 +1,47 @@
+@keyframes color-change {
+    0% {
+        color: #E60012;
+        /* 赤 */
+    }
+
+    14.28% {
+        color: #F39800;
+        /* 橙 */
+    }
+
+    28.56% {
+        color: #FFF100;
+        /* 黄 */
+    }
+
+    42.84% {
+        color: #009944;
+        /* 緑 */
+    }
+
+    57.12% {
+        color: #0068B7;
+        /* 青 */
+    }
+
+    71.40% {
+        color: #1D2088;
+        /* 藍 */
+    }
+
+    85.68% {
+        color: #920783;
+        /* 紫 */
+    }
+
+    100.0% {
+        color: #E60012;
+        /* 赤 */
+    }
+}
+
+header {
+    color: #E60012;
+    animation: color-change 1.25s infinite linear;
+    transition: all;
+}

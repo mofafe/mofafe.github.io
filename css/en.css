@@ -1,0 +1,29 @@
+html{
+    overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: black;
+    font-size: 50%;
+    color: white;
+    text-decoration: none;
+}
+a,
+a:link,
+a:visited{
+    color: white;
+    text-decoration: underline;
+}
+.string{
+    position: absolute;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    right: calc(10px + env(safe-area-inset-right));
+    text-decoration: none;
+    max-width: min(90vw, 420px);
+}
+
+@media (max-width: 768px) {
+    .string {
+        font-size: 0.5em;
+    }
+}

@@ -1,0 +1,22 @@
+html {
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.goals article {
+  margin-bottom: 2rem;
+}
+
+.status {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 0.5em;
+}
+
+progress {
+  width: 25%;
+  height: 12px;
+}
