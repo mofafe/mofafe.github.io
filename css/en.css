@@ -1,20 +1,22 @@
-html{
+html {
     overflow-x: hidden;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     background-color: black;
     font-size: 50%;
-    color: white;
+    color: #606060;
     text-decoration: none;
 }
+
 a,
 a:link,
-a:visited{
-    color: white;
+a:visited {
+    color: #606060;
     text-decoration: underline;
 }
-.string{
+
+.string {
     position: absolute;
     bottom: calc(10px + env(safe-area-inset-bottom));
     right: calc(10px + env(safe-area-inset-right));
