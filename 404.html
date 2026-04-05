@@ -24,36 +24,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Noto+Sans+JP&family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/ja.css">
+
+    <!-- Optional Styles -->
+    <!--link rel="stylesheet" href="/css/header-gaming.css"-->
 </head>
 
 <body>
-    <div>
-        <style>
-            body {
-                margin: 0;
-                min-height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 10vw;
-                line-height: 1;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        </style>
-        <div>
-            <h1>404</h1>
-            <p>お探しのページは存在しません</p>
-        </div>
-    </div>
+    <header class="main-header">
+        <nav>
+            <a href="/">home</a>
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>404</h1>
+            </header>
+            <section>
+                <p>お探しのページは<wbr />存在しません</p>
+            </section>
+        </article>
+    </main>
+    <script src="/js/cursor.js"></script>
 </body>
 
 </html>

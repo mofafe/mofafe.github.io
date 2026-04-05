@@ -10,12 +10,16 @@ html {
 
 .main-header {
     position: fixed;
-    color: #FEF000;
 }
 
 a,
 a:link,
 a:visited {
+    color: #c0c0c0;
+    text-decoration: underline;
+}
+
+.main-header a {
     color: #FEF000;
     text-decoration: underline;
 }
