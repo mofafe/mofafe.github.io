@@ -47,7 +47,7 @@ footer {
 @media (max-width: 768px) {
     main {
         font-size: 0.75em;
-        margin-left: 50vw;
+        margin-left: 25vw;
     }
 
     footer {
