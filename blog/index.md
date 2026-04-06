@@ -4,7 +4,7 @@ title: "ブログ記事一覧"
 
 # mofafeのブログ記事一覧
 
-{% assign sorted_posts = site.posts | sort: "url" | reverse %}
+{% assign sorted_posts = site.posts | sort: "title" | reverse %}
 
 <ul>
   {% for post in sorted_posts %}
