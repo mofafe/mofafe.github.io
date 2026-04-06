@@ -57,9 +57,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin-left: 25vw;
+    }
+
     main {
         font-size: 0.75em;
-        margin-left: 25vw;
     }
 
     footer {
