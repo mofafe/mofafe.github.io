@@ -8,7 +8,7 @@
 
     <!-- SEO -->
     <title>mofafe blog -  {% if page.title %}{{ page.title }}{% else site.title %}</title>
-    <meta property="og:title" content="mofafe blog - {% if page.title %}{{ page.title }}{% else site.title %}">
+    <meta property="og:title" content="mofafe blog - {% if page.title %}{{ page.title }}{% else site.title %}{% endif %}">
     <meta name="apple-mobile-web-app-title" content="mofafe">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}">
