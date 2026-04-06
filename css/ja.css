@@ -3,13 +3,15 @@ html {
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    background-color: black;
+    background-color: #000000;
     text-decoration: none;
     word-break: keep-all;
 }
 
 .main-header {
     position: fixed;
+    top: 5px;
+    left: 5px;
 }
 
 a,
@@ -24,23 +26,30 @@ a:visited {
     text-decoration: underline;
 }
 
+body {
+    display: flex;
+    margin-top: 50vh;
+    margin-left: 66.66vw;
+    position: absolute;
+    flex-direction: column;
+}
+
 header {
     color: #00FF70;
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
     font-style: normal;
+    flex: 0;
 }
 
 main {
     color: #c0c0c0;
-    margin-top: 50vh;
-    margin-left: 66.66vw;
-    position: absolute;
     text-decoration: none;
 }
 
 footer {
-    padding: 20px;
+    color: #c0c0c0;
+    padding: 16px;
     font-size: 12px;
 }
 
