@@ -1,15 +1,16 @@
 ---
-title: ブログ一覧
+title: "ブログ記事一覧"
 ---
 
-# ブログ記事一覧
+# mofafeのブログ記事一覧
 
-{% assign sorted_posts = site.posts | sort: "title" %}
+{% assign sorted_posts = site.posts | sort: "url" | reverse %}
 
 <ul>
   {% for post in sorted_posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title | default: post.url }}</a>
     </li>
   {% endfor %}
 </ul>
