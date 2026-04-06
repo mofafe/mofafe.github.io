@@ -35,7 +35,7 @@ body {
 }
 
 header,
-h1 {
+main h1 {
     color: #00FF70;
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
