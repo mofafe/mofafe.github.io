@@ -2,7 +2,7 @@
 title: "mofafe - blog"
 ---
 
-# 何にもない<br>mofafeの&#8203;ブログ記事一覧
+# なんにもない<br>mofafeの&#8203;ブログ記事一覧
 
 {% assign sorted_posts = site.posts | sort: "title" | reverse %}
 
