@@ -1,8 +1,8 @@
 ---
-title: "ブログ記事一覧"
+title: "mofafe - blog"
 ---
 
-# mofafeのブログ記事一覧
+# 何にもない\mofafeの&#8203;ブログ記事一覧
 
 {% assign sorted_posts = site.posts | sort: "title" | reverse %}
 
