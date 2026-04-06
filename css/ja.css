@@ -34,7 +34,8 @@ body {
     flex-direction: column;
 }
 
-header {
+header,
+h1 {
     color: #00FF70;
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
@@ -42,7 +43,9 @@ header {
     flex: 0;
 }
 
-main {
+main,
+h2,
+p {
     color: #c0c0c0;
     text-decoration: none;
 }

@@ -1,1 +1,7 @@
 include: [".well-known"]
+permalink: /:title/
+defaults:
+  - scope:
+      path: "blog"
+    values:
+      layout: "blog"

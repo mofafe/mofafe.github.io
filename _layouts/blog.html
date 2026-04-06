@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>mofafe blog -  {% if page.title %}{{ page.title }}{% else site.title %}</title>
+    <meta property="og:title" content="mofafe blog - {% if page.title %}{{ page.title }}{% else site.title %}">
+    <meta name="apple-mobile-web-app-title" content="mofafe">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}">
+    <link rel="canonical" href="https://mofafe.net{{ page.url }}">
+    <meta property="og:url" content="https://mofafe.net{{ page.url }}">
+    <meta property="og:image" content="https://mofafe.net/img/mofafe.png">
+
+    <!-- Icons / App -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/apple-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="/apple-icon-precomposed.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/ms-icon-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/ms-icon-150x150.png">
+    <meta name="msapplication-square310x310logo" content="/ms-icon-310x310.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/ja.css">
+
+    <!-- Optional Styles -->
+    <!--link rel="stylesheet" href="/css/header-gaming.css"-->
+</head>
+
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="/">home</a>
+            <a href="/about">about</a>
+            <a href="/blog">blog</a>
+            <a href="/contact">contact</a>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; 2025-2026 mofafe. All rights reserved.</p>
+    </footer>
+    <script src="/js/cursor.js"></script>
+</body>
+
+</html>
