@@ -5,7 +5,9 @@ html {
     font-weight: 400;
     background-color: #000000;
     text-decoration: none;
-    word-break: keep-all;
+    line-break: strict;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 .main-header {
