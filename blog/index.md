@@ -1,5 +1,6 @@
 ---
 title: "blog"
+description: "mofafeの個人サイトのブログ、まだ特に何もないよ"
 ---
 
 # なんにもない、<br>mofafeの&#8203;ブログ記事
