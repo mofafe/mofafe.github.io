@@ -1,5 +1,5 @@
 function kyoto() {
-    var num = Math.floor(Math.random() * 5);
+    var num = Math.floor(Math.random() * 47);
     var msg = "";
     switch (num) {
         case 0:
