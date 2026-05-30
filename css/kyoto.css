@@ -1,0 +1,27 @@
+html {
+    overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #00c3ff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: red;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 75px;
+}
+
+input {
+    width: 400px;
+    padding: 50px;
+    font-size: 50px;
+}
