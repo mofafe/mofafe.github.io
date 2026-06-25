@@ -1,5 +1,5 @@
 ---
-title: "blog"
+title: "Blog"
 description: "mofafeの個人サイトのブログ、まだ特に何もないよ"
 ---
 

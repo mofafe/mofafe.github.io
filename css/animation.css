@@ -1,0 +1,21 @@
+.split>span {
+    display: inline-block;
+}
+
+@keyframes jump {
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    85% {
+        transform: rotate(15deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+}
