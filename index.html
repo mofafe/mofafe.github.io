@@ -1,110 +1,195 @@
 <!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mofafe</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-    <!-- Base -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      .desktop-grid {
+        padding: 24px;
 
-    <!-- SEO -->
-    <title>mofafe - Home</title>
-    <meta name="apple-mobile-web-app-title" content="mofafe">
-    <meta name="description" content="mofafeの個人サイト、まだ特に何もないよ">
-    <link rel="canonical" href="https://mofafe.net/">
-    <meta property="og:title" content="mofafe - home">
-    <meta property="og:description" content="mofafeの個人サイト、まだ特に何もないよ">
-    <meta property="og:url" content="https://mofafe.net/">
-    <meta property="og:image" content="https://mofafe.net/img/mofafe.png">
+        display: grid;
 
-    <!-- Icons / App -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="apple-touch-icon" href="/apple-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="/apple-icon-precomposed.png">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="msapplication-square70x70logo" content="/ms-icon-70x70.png">
-    <meta name="msapplication-square150x150logo" content="/ms-icon-150x150.png">
-    <meta name="msapplication-square310x310logo" content="/ms-icon-310x310.png">
-    <meta name="theme-color" content="#ffffff">
+        width: 100vw;
+        height: 100vh;
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        gap: 36px;
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/ja.css">
-    <link rel="stylesheet" href="/css/animation.css">
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
 
-    <!-- Optional Styles -->
-    <!--link rel="stylesheet" href="/css/header-gaming.css"-->
-</head>
+      .tile {
+        padding: 12px;
 
-<body>
-    <header class="main-header">
-        <nav>
-            <a href="/">home</a>
-            <a href="/about">about</a>
-            <a href="/blog">blog</a>
-            <a href="/contact">contact</a>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <header>
-                <h1 class="split">なんにもない、<br>mofafeのウェブサイト</h1>
-            </header>
-            <section>
-                <p class="split">
-                    主にGo言語で遊んだり<br>
-                    ちょっとRustに触れてわけわからなくなったり<br>
-                    Python,JavaScript,TypeScript,Rust,C,C++
-                    あたりに触れたり触れなかったり<br>
-                    <s>触れてるだけで分かるとは言ってない</s>
-                </p>
-            </section>
-            <section>
-                <p class="split">
-                    今は勉強しながら色々作ってます<br>
-                    Ginとか抽象度の高い物に守られて作ってきたせいで
-                    理解が追いつかなくなってきたから低レイヤーからやってみようかな
-                </p>
-            </section>
-            <section>
-                <p class="split">
-                    友人に病んでる女の子のインスタみたいに
-                    しようって言われてこうなりました<br>
-                    <s>ついでにカーソルに黒いの追従させようって言われました<br></s>
-                    カーソルに黒いの追従させてたのは無くなりました<br>
-                    代わりに8mo君がきました<br>
-                    <s>こいつの名前は友達が決めた色違いGopher君でしたが、独断で8moにしました()</s>
-                </p class="split">
-            </section>
-        </article>
+        display: flex;
+
+        text-decoration: none;
+        color: inherit;
+
+        border-radius: 24px;
+
+        border: 9px solid;
+
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+        transition: 0.2s;
+      }
+
+      .tile:hover {
+        transform: translateY(-4px);
+      }
+
+      .tile.about {
+        border-color: aquamarine;
+      }
+
+      .tile h2 {
+        font-size: 3rem;
+      }
+
+      body {
+        overflow: hidden;
+      }
+
+      .curtain {
+        position: fixed;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+
+        background: #111;
+
+        z-index: 9999;
+
+        animation-duration: 1.2s;
+        animation-delay: 2s;
+        animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+        animation-fill-mode: forwards;
+      }
+
+      .curtain-left {
+        left: 0;
+        animation-name: open-left;
+      }
+
+      .curtain-right {
+        right: 0;
+        animation-name: open-right;
+      }
+
+      @keyframes open-left {
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes open-right {
+        to {
+          transform: translateX(100%);
+        }
+      }
+
+      .intro {
+        color: skyblue;
+
+        position: fixed;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10000;
+      }
+
+      .intro span {
+        display: inline-block;
+
+        opacity: 0;
+
+        transform: translateY(-100px);
+
+        animation: drop 0.6s forwards;
+
+        animation-delay: calc(var(--i) * 0.15s);
+      }
+
+      @keyframes drop {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="intro">
+      <h1>
+        <span style="--i: 0">m</span>
+        <span style="--i: 1">o</span>
+        <span style="--i: 2">f</span>
+        <span style="--i: 3">a</span>
+        <span style="--i: 4">f</span>
+        <span style="--i: 5">e</span>
+      </h1>
+
+      <p>のサイトへようこそ</p>
+    </div>
+
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+
+    <main class="desktop-grid">
+      <a class="tile about">
+        <div class="content">
+          <h2>About</h2>
+          <p>にわかプログラマー、にわかDTMer。</p>
+        </div>
+      </a>
+      <a class="tile programming">
+        <div class="content">
+          <h2>Programming</h2>
+          <p>
+            自分が作りたいものをたまに作る、飽きっぽいので完成品はまだない。
+          </p>
+        </div>
+      </a>
+      <a class="tile music">
+        <div class="content">
+          <h2>Music</h2>
+          <p>興味はあるし、やってて楽しいけど、まだ完成は遠そう。</p>
+        </div>
+      </a>
+      <a class="tile novel">
+        <div class="content">
+          <h2>Novel</h2>
+          <p>
+            文章書くのは楽しいけど、数年後黒歴史になるのが怖くて、なかなか書けない。小説って黒歴史の代名詞みたいなとこある()
+          </p>
+        </div>
+      </a>
+      <a class="tile archive">
+        <div class="content">
+          <h2>Archive</h2>
+          <p>今まで僕が作ったものたち。と言いながらまだない。</p>
+        </div>
+      </a>
+      <a class="tile links">
+        <div class="content">
+          <h2>Links</h2>
+          <p>SNSアカウントたち。</p>
+        </div>
+      </a>
     </main>
-    <footer>
-        <p class="split">&copy; 2025-2026 mofafe. All rights reserved.</p>
-    </footer>
-    <script src="/js/cursor.js"></script>
-    <script src="/js/split.js"></script>
-</body>
-
+  </body>
 </html>
